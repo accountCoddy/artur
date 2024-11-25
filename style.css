@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+Body{
+    height: 100vh;
+    background: rgb(252,186,255);
+    background: radial-gradient(circle, rgb(252, 199, 255) 0%, rgb(255, 160, 225) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color:rgba(255, 248, 220, 0.848) ;
+    width: 500px;
+    height: 620px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.878);
+    padding: 20px;
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    color: rgb(202, 56, 255);
+    text-shadow: 5px 5px 30px;
+}
+
+.card-img{
+    width: 100%;
+    
+}
+
+.text{
+    color: rgb(0, 75, 112);
+    margin-bottom: 10px;
+}
+
+.signature{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(255, 0, 132);
+}
+
+.heart{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(237, 0, 0);
+    position: absolute;
+    rotate: 45deg;   
+    left: 50px;
+    top: 300px;
+}
+
+.heart::before, .heart::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(237, 0, 0);
+    position: absolute;
+    
+}
+
+.heart::before{
+    left: -15px;
+}
+
+.heart::after{
+    top: -15px;
+}
